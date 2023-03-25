@@ -19,7 +19,7 @@ const Employees = ({employees, selectedTeam, handleTeamSelectionChange, handleEm
                 <div className='col-8'>
                     <div className='card-collection'>
                         {employees.map((employee) => (
-                            <div id={employee.id} className={(employee.teamName === selectedTeam) ? 
+                            <div key={employee.id} id={employee.id} className={(employee.teamName === selectedTeam) ? 
                                 'card m-2 standout': 'card m-2'}
                                 onClick={handleEmployeeCardClick}>
                                 {(employee.gender === 'male') ? <img src={maleProfile}

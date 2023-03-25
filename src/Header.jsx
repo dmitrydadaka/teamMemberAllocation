@@ -9,7 +9,6 @@ const Header = ({ selectedTeam, teamMemberCount }) => {
                     <h3>{selectedTeam} has {teamMemberCount} Members</h3>
                 </div>
             </div>
-
         </header>
     )
 }
